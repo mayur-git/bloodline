@@ -1,4 +1,4 @@
-**Bloodline**
+**Bloodline (Blockchain PoC by [WowLabz](http://wowlabz.com) for the [Proffer Hackathon](https://proffer.network/hackathon))**
 ================
     Motivation
 The current ecosystem of blood donation, storage, and redemption of blood is broken, non-transparent, and inefficient. There is no way for donors to view current needs around them, and track their past donations, and for those in need to create a requests for blood, and also redeem their past donations for current need.
