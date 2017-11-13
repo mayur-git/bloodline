@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Bloodline - Edit Profile</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+
+        <!-- Compiled and minified Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="editGrid">
+            <div class="editHeader navbar-fixed">
+                <nav class="nav-extended">
+                    <div class="nav-wrapper">
+                        <a href="home.html" class="brand-logo"><img src="css/img/logo2.png"/></a>
+                        <ul id="nav-mobile" class="right">
+                            <li>
+                                <a class="dropdown-button" data-activates='dropdown1'><img src="css/img/ic_power_settings_new_black_48px.png" /></a>
+                                <ul id='dropdown1' class='dropdown-content'>
+                                    <p class="logoutText">Logout of Bloodline</p>
+                                    <div class="btnDiv">
+                                        <li class="btn-flat logoutBtn"><span class="logoutSpan"><img src="css/img/ic_power_settings_new_red_48px.png" /></span> Logout</li>
+                                        <li class="btn-flat cancelBtn dropDownCancel">Cancel</li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="notifications.html"><img src="css/img/ic_notification.png" /></a>
+                            </li>
+                            <li>
+                                <a href="editProfile.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-content nav-center">
+                        <ul>
+                            <li class="btn-flat editBtn">Edit Profile</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="editContent">
+                <div class="editForm">
+                    <div class="input-field">
+                        <input placeholder="Your Full Name" id="fullName" type="text" class="validate">
+                        <label for="fullName">Full Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input placeholder="Your Mobile Number" id="mobileNumber" type="text" class="validate">
+                        <label for="mobileNumber">Mobile Number</label>
+                    </div>
+                    <div>
+                        <label for="bloodGroup">Blood Group</label>
+                        <select class="selectUnits">
+                            <option value="A+">A+</option>
+                            <option value="B+">B+</option>
+                            <option value="A-">A-</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="O+">O+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+                    <button class="waves-effect waves-red btn-flat editSaveBtn">Save </button>
+                    <button class="waves-effect waves-grey btn-flat cancelEditBtn">Cancel </button> 
+                </div>
+            </div>
+
+            <div id="otpModal" class="modal">
+                <div class="modal-content">
+                    <div class="card-content">
+                        <p class="card-title modalTitle">Enter OTP to verify your new mobile number.</p>
+                    </div>
+                    <div>
+                        <input placeholder="OTP" id="otp" type="text" class="validate">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="modal-action waves-effect waves-red btn-flat doneBtn"></span>Done</a>
+                    <a class="modal-action modal-close waves-effect waves-red btn-flat changeBtn"></span>Change number</a>
+                    <a class="modal-action waves-effect waves-red btn-flat resendBtn"></span>Resend otp</a>
+                </div>
+            </div>
+
+        </div>
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="js/vendor/jquery-3.2.1.min.js"></script>
+        <!-- JS file for alert box -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+        <!-- Compiled and minified Materialize JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/web3.min.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.modal').modal();
+
+                $('.editSaveBtn').on('click', function(){
+                    $('#otpModal').modal('open');
+                });
+
+                $('.doneBtn').on('click', function(){
+
+                });
+
+                $('.cancelEditBtn').on('click', function(){
+                    location.href = 'home.html';
+                });
+
+                $('.logoutBtn').on('click', function(){
+                    location.href = 'index.html';
+                });
+            });
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>

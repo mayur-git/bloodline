@@ -1,0 +1,342 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Bloodline - Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+
+        <!-- Compiled and minified Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="homeGrid">
+            <div class="header navbar-fixed">
+                <nav class="nav-extended">
+                    <div class="nav-wrapper">
+                        <a href="home.html" class="brand-logo"><img src="css/img/logo2.png"/></a>
+                        <ul id="nav-mobile" class="right">
+                            <li>
+                                <a class="dropdown-button" data-activates='dropdown1'><img src="css/img/ic_power_settings_new_black_48px.png" /></a>
+                                <ul id='dropdown1' class='dropdown-content'>
+                                    <p class="logoutText">Logout of Bloodline</p>
+                                    <div class="btnDiv">
+                                        <li class="btn-flat logoutBtn"><span class="logoutSpan"><img src="css/img/ic_power_settings_new_red_48px.png" /></span> Logout</li>
+                                        <li class="btn-flat cancelBtn dropDownCancel">Cancel</li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="notifications.html"><img src="css/img/ic_notification.png" /></a>
+                            </li>
+                            <li>
+                                <a href="editProfile.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="nav-content nav-center">
+                        <ul class="tabs tabs-transparent">
+                            <li class="tab"><a class="active" href="#requestsBlood">Requests for Blood</a></li>
+                            <li class="tab"><a href="#requestsBlc">Requests for BLC</a></li>
+                            <li class="tab"><a href="#history">History</a></li>
+                        </ul>
+                        <a class="createBtn btn-floating btn-large halfway-fab waves-effect waves-light dropdown-button" data-activates='dropdown2'>
+                            <img src="css/img/ic_add_black_48px (1).png" />
+                        </a>
+                        <ul id='dropdown2' class='dropdown-content'>
+                            <div class="btnDiv">
+                                <li class="btn-flat bloodRequestBtn">Request Blood</li>
+                                <li class="btn-flat blcRequestBtn">Request BLC</li>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="contentDiv">
+                <div id="requestsBlood">
+                    <div class="requestCard card darken-1">
+                        <div class="card-content">
+                            <span class="card-title">Need A+ Blood, 6 units <span class="distance">6 kms</span></span>
+                            <span class="rbc">+20 BLC</span>
+                            <div class="addressDiv">
+                                <img class="addressImg" src="css/img/ic_location_on_black_48px (1) copy 2.png" />
+                                <p class="address">Manipal Hospital Old Airport Road HAL 1st stage Bangalore 560007</p>
+                            </div>
+                            <div class="descriptionDiv">
+                                <img src="css/img/ic_face_black_48px copy 2.png" />
+                                <p class="description">My mother is undergoing her heart surgery. Please donate A+ blood.</p>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <p class="time">4:00 pm, 09/11/2017</p>
+                            <button id="A+" class="waves-effect waves-red btn-flat donateBtn">Donate blood</button> 
+                        </div>
+                    </div>
+
+                    <div class="requestCard card darken-1">
+                        <div class="card-content">
+                            <span class="card-title">Need AB+ Blood, 4 units <span class="distance">4 kms</span></span>
+                            <span class="rbc">+20 BLC</span>
+                            <div class="addressDiv">
+                                <img class="addressImg" src="css/img/ic_location_on_black_48px (1) copy 2.png" />
+                                <p class="address">Santhosh Hospital Frazer Town Opp Coles Park Bangalore, 560005</p>
+                            </div>
+                            <div class="descriptionDiv">
+                                <img src="css/img/ic_face_black_48px copy 2.png" />
+                                <p class="description">My daughter had an accident please donate AB+ blood.</p>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <p class="time">4:00 pm, 09/11/2017</p>
+                            <button id="AB+" class="waves-effect waves-red btn-flat donateBtn">Donate blood</button> 
+                        </div>
+                    </div>
+
+                    <div class="requestCard card darken-1">
+                        <div class="card-content">
+                            <span class="card-title">Need AB+ Blood, 4 units <span class="distance">4 kms</span></span>
+                            <span class="rbc">+20 BLC</span>
+                            <div class="addressDiv">
+                                <img class="addressImg" src="css/img/ic_location_on_black_48px (1) copy 2.png" />
+                                <p class="address">Santhosh Hospital Frazer Town Opp Coles Park Bangalore, 560005</p>
+                            </div>
+                            <div class="descriptionDiv">
+                                <img src="css/img/ic_face_black_48px copy 2.png" />
+                                <p class="description">My daughter had an accident please donate AB+ blood.</p>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <p class="time">4:00 pm, 09/11/2017</p>
+                            <button id="AB+" class="waves-effect waves-red btn-flat donateBtn">Donate blood</button> 
+                        </div>
+                    </div>
+
+                    <div class="requestCard card darken-1">
+                        <div class="card-content">
+                            <span class="card-title">Need AB+ Blood, 4 units <span class="distance">4 kms</span></span>
+                            <span class="rbc">+20 BLC</span>
+                            <div class="addressDiv">
+                                <img class="addressImg" src="css/img/ic_location_on_black_48px (1) copy 2.png" />
+                                <p class="address">Santhosh Hospital Frazer Town Opp Coles Park Bangalore, 560005</p>
+                            </div>
+                            <div class="descriptionDiv">
+                                <img src="css/img/ic_face_black_48px copy 2.png" />
+                                <p class="description">My daughter had an accident please donate AB+ blood.</p>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <p class="time">4:00 pm, 09/11/2017</p>
+                            <button id="AB+" class="waves-effect waves-red btn-flat donateBtn">Donate blood</button> 
+                        </div>
+                    </div>
+                </div>
+
+                <div id="history">
+                    <div class="requestCard card darken-1">
+                        <div class="card-content">
+                            <p class="time">4:00 pm, 09/11/2017</p>
+                            <span class="card-title historyTitle">You need A+ Blood, 6 units <span class="distance">6 kms</span></span>
+                            <div class="addressDiv">
+                                <img class="addressImg" src="css/img/ic_location_on_black_48px (1) copy 2.png" />
+                                <p class="address">Manipal Hospital Old Airport Road HAL 1st stage Bangalore 560007</p>
+                            </div>
+                            <div class="descriptionDiv">
+                                <img src="css/img/ic_face_black_48px copy 2.png" />
+                                <p class="description">My mother is undergoing her heart surgery. Please donate A+ blood.</p>
+                            </div>
+                        </div>
+                        <div class="card-action historyCardActionDiv">
+                            <button class="waves-effect waves-red btn donorsBtn">4 Donors</button>
+                            <a class="editBtn"><img src="css/img/ic_edit_grey_48px.png" /></a>
+                            <button class="waves-effect waves-red btn-flat closeBtn">Close Request</button> 
+                        </div>
+                    </div>
+
+                    <div class="requestCard card darken-1">
+                        <div class="card-content">
+                            <span class="card-title">Need AB+ Blood, 4 units <span class="distance">4 kms</span></span>
+                            <div class="addressDiv">
+                                <img class="addressImg" src="css/img/ic_location_on_black_48px (1) copy 2.png" />
+                                <p class="address">Santhosh Hospital Frazer Town Opp Coles Park Bangalore, 560005</p>
+                            </div>
+                            <div class="descriptionDiv">
+                                <img src="css/img/ic_face_black_48px copy 2.png" />
+                                <p class="description">My daughter had an accident please donate AB+ blood.</p>
+                            </div>
+                        </div>
+                        <div class="card-action historyCardActionDiv">
+                            <button class="waves-effect waves-red btn donorsBtn">4 Donors</button>
+                            <a class="editBtn"><img src="css/img/ic_edit_grey_48px.png" /></a>
+                            <button class="waves-effect waves-red btn-flat closeBtn">Close Request</button> 
+                        </div>
+                    </div>
+                </div>
+
+                <div id="donateModal" class="modal">
+                    <div class="modal-content modalHeaderDiv">
+                        <h4 class="modalHeader">Thank you for your willingness to save a life</h4>
+                    </div>
+                    <div class="modal-content">
+                        <div class="card-content">
+                            <p class="card-title modalTitle">Sumit Yadav <span class="modalTime">4:00 pm, 09/11/2017</span></p>
+                            <p class="card-title modalTitle2">Need AB+ Blood, 4 units <span class="distance">4 kms</span></p>
+                            <div class="addressDiv">
+                                <img class="addressImg" src="css/img/ic_location_on_black_48px (1) copy 2.png" />
+                                <p class="address modalAddress">Santhosh Hospital Frazer Town Opp Coles Park Bangalore, 560005</p>
+                            </div>
+                            <div class="descriptionDiv">
+                                <img src="css/img/ic_face_black_48px copy 2.png" />
+                                <p class="description modalDescription">My daughter had an accident please donate AB+ blood.</p>
+                            </div>
+                            <div class="rbcDiv">
+                                <p class="blcStatic">BLC</p>
+                                <p class="description modalRbc">+10 BLC / unit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p class="modalNumber">+91 9876543210</p>
+                        <a class="callBtn waves-effect waves-red btn-flat"><span class="callImg"><img src="css/img/ic_call_black_48px (2).png" /></span>Call and coordinate</a>
+                        <a class="modal-action modal-close waves-effect waves-red btn-flat cancelBtn">Cancel</a>
+                    </div>
+                </div>
+
+                <div id="shareModal" class="modal">
+                    <div class="modal-content modalHeaderDiv">
+                        <h4 class="modalHeader">You are not a compatible blood type<br/>Please share with your friends and family</h4>
+                    </div>
+                    <div class="modal-content">
+                        <div class="card-content">
+                            <p class="card-title modalTitle">Natasha Borev <span class="modalTime">4:00 pm, 09/11/2017</span></p>
+                            <p class="card-title modalTitle2">Need A+ Blood, 6 units <span class="distance">4 kms</span></p>
+                            <div class="addressDiv">
+                                <img class="addressImg" src="css/img/ic_location_on_black_48px (1) copy 2.png" />
+                                <p class="address modalAddress">Manipal Hospital Old Airport Road HAL 1st stage Bangalore 560007</p>
+                            </div>
+                            <div class="descriptionDiv">
+                                <img src="css/img/ic_face_black_48px copy 2.png" />
+                                <p class="description modalDescription">My mother is undergoing her heart surgery. Please donate A+ blood.</p>
+                            </div>
+                            <div class="rbcDiv">
+                                <p class="blcStatic">BLC</p>
+                                <p class="description modalRbc">+10 BLC / unit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="callBtn waves-effect waves-red btn-flat"><span class="callImg"><img src="css/img/ic_link_black_48px.png" /></span>Share</a>
+                        <a class="modal-action modal-close waves-effect waves-red btn-flat cancelBtn">Cancel</a>
+                    </div>
+                </div>
+
+                 <div id="closeRequestModal" class="modal">
+                    <div class="modal-content modalHeaderDiv">
+                        <h4 class="modalHeader">Close this request because</h4>
+                    </div>
+                    <div class="modal-content closeReasonDiv">
+                        <h5 class="closeReason">Discharged</h5>
+                    </div>
+                    <div class="modal-content closeReasonDiv">
+                        <h5 class="closeReason">Found donors outside Bloodline</h5>
+                    </div>
+                    <div class="modal-content closeReasonDiv">
+                        <h5 class="closeReason">False Alarm</h5>
+                    </div>
+                    <div class="modal-content closeReasonDiv">
+                        <h5 class="closeReason">Other</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <p class="time">4:00 pm, 09/11/2017</p>
+                        <span class="card-title historyTitle">You need A+ Blood, 6 units</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="js/vendor/jquery-3.2.1.min.js"></script>
+        <!-- JS file for alert box -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+        <!-- Compiled and minified Materialize JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/web3.min.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.modal').modal();
+
+                $.ajax({
+                    url: 'http://52.66.160.142:3000/request',
+                    type: "GET",
+                    contentType: "application/json",
+                    crossDomain: true,
+                    success: function(result){
+                        console.log('result', result);
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                    }
+                });
+
+                $('.logoutBtn').on('click', function(){
+                    location.href = 'index.html';
+                });
+
+                $('.bloodRequestBtn').on('click', function(){
+                    location.href = 'createRequest.html';
+                });
+
+                $('.blcRequestBtn').on('click', function(){
+                    location.href = 'createBlcRequest.html';
+                });
+
+                $('.donateBtn').on('click', function(){
+                    var id = $(this).attr('id');
+
+                    if(id == 'A+')
+                        $('#shareModal').modal('open');
+                    else
+                       $('#donateModal').modal('open'); 
+                });
+
+                $('.closeBtn').on('click', function(){
+                    $('#closeRequestModal').modal('open');
+                });
+
+                $('.donorsBtn').on('click', function(){
+                    location.href = 'donors.html';
+                });
+            });
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>

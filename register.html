@@ -1,0 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Bloodline - Register</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+
+        <!-- Compiled and minified Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+        <!-- CSS for alert box -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="registerGrid">
+            <div class="header">
+                <a href="index.html"><img src="css/img/logo2.png" /></a>
+            </div>
+
+            <div class="registerDiv">
+                <div class="registerForm">
+                    <div class="input-field">
+                        <input placeholder="Full Name" id="fullName" type="text" class="validate">
+                        <label for="fullName">Full Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input placeholder="Mobile Number" id="mobileNumber" type="text" class="validate">
+                        <label for="mobileNumber">Mobile Number</label>
+                    </div>
+                    <a class="waves-effect waves-light btn registerBtn">Register</a>
+                </div>
+
+                <div class="verifyForm">
+                    <p>Verify your mobile number</p>
+                    <div class="input-field">
+                        <input placeholder="Enter OTP sent to this number" id="otp" type="text" value="8080" class="validate">
+                        <label for="otp">Enter OTP sent to this number</label>
+                    </div>
+                    <a class="waves-effect waves-red btn-flat verifyBtn">Verify</a>
+                    <a class="waves-effect waves-red btn-flat verifyBtn">Resend OTP</a>
+                </div>
+
+                <div class="bloodGroupForm">
+                    <p>Select your blood type</p>
+                    <div class="bloodGroupDiv">
+                      <a class="bloodGroupBtn btn-floating btn-large waves-effect waves-red" id="A+"><i class="material-icons bloodGroupTextReg">A+</i></a>
+                      <a class="bloodGroupBtn btn-floating btn-large waves-effect waves-red" id="B+"><i class="material-icons bloodGroupTextReg">B+</i></a>
+                      <a class="bloodGroupBtn btn-floating btn-large waves-effect waves-red" id="A-"><i class="material-icons bloodGroupTextReg">A-</i></a>
+                      <a class="bloodGroupBtn btn-floating btn-large waves-effect waves-red" id="B-"><i class="material-icons bloodGroupTextReg">B-</i></a>
+                    </div>
+                    <div class="bloodGroupDiv">
+                      <a class="bloodGroupBtn btn-floating btn-large waves-effect waves-red" id="AB+"><i class="material-icons bloodGroupTextReg">AB+</i></a>
+                      <a class="bloodGroupBtn btn-floating btn-large waves-effect waves-red" id="O+"><i class="material-icons bloodGroupTextReg">O+</i></a>
+                      <a class="bloodGroupBtn btn-floating btn-large waves-effect waves-red" id="AB-"><i class="material-icons bloodGroupTextReg">AB-</i></a>
+                      <a class="bloodGroupBtn btn-floating btn-large waves-effect waves-red" id="O-"><i class="material-icons bloodGroupTextReg">O-</i></a>
+                    </div>
+                </div>
+
+                <div class="finalDiv">
+                    <div class="userDiv">
+                        <p class="startText">Hello username</p>
+                        <p class="startText">One unit of your blood will save upto 3 lives</p>
+                    </div>
+
+                    <p class="redText">Your Bloodline Balance</p>
+                    <p class="redText balance">100 RBC</p>
+
+                    <a class="waves-effect waves-red btn-flat startBtn">Get started <span class="imgSpan"><img src="css/img/ic_arrow_forward.png"/></span></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="js/vendor/jquery-3.2.1.min.js"></script>
+        <!-- JS file for alert box -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+        <!-- Compiled and minified Materialize JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/web3.min.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script type="text/javascript">
+            $('.registerBtn').on('click', function(){
+                $('.registerForm').hide();
+                $('.verifyForm').show();
+            });
+
+            $('.verifyBtn').on('click', function(){
+                $('.registerForm').hide();
+                $('.verifyForm').hide();
+                $('.bloodGroupForm').show();
+            });
+
+            $('.bloodGroupBtn').on('click', function(){
+                var selectedGroup = $(this).attr('id');
+                $('.registerForm').hide();
+                $('.verifyForm').hide();
+                $('.bloodGroupForm').hide();
+                $('.finalDiv').show();
+            });
+
+            $('.startBtn').on('click', function(){
+                location.href = 'home.html';
+            });
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>

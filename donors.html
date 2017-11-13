@@ -1,0 +1,154 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Bloodline - Donors</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+
+        <!-- Compiled and minified Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="donorGrid">
+            <div class="donorHeader navbar-fixed">
+                <nav class="nav-extended">
+                    <div class="nav-wrapper">
+                        <a href="home.html" class="brand-logo"><img src="css/img/logo2.png"/></a>
+                        <ul id="nav-mobile" class="right">
+                            <li>
+                                <a class="dropdown-button" data-activates='dropdown1'><img src="css/img/ic_power_settings_new_black_48px.png" /></a>
+                                <ul id='dropdown1' class='dropdown-content'>
+                                    <p class="logoutText">Logout of Bloodline</p>
+                                    <div class="btnDiv">
+                                        <li class="btn-flat logoutBtn"><span class="logoutSpan"><img src="css/img/ic_power_settings_new_red_48px.png" /></span> Logout</li>
+                                        <li class="btn-flat cancelBtn dropDownCancel">Cancel</li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="notifications.html"><img src="css/img/ic_notification.png" /></a>
+                            </li>
+                            <li>
+                                <a href="editProfile.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-content nav-center">
+                        <ul class="donorsNav">
+                            <li class="btn-flat donorNavbarBtn">4 Donors</li>
+                            <li class="btn-flat backBtn"><span class="imgSpan"><img src="css/img/ic_arrow_back.png"/></span> Back to history</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="donorContentDiv">
+                <div class="donorCards">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="card-title donorText">Sethuram Iyer <span class="donorBloodGroup">O-</span></p>
+                            <p class="card-title donorText">+91 9876543210</p>
+                            <a class="btn-flat sendOtpBtn">Send otp to transfer 10 BLC <span class="donorBloodGroup"><img src="css/img/ic_call_black_48px (2).png" /></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="card-title donorText">Sethuram Iyer <span class="donorBloodGroup">O-</span></p>
+                            <p class="card-title donorText">+91 9876543210</p>
+                            <a class="btn-flat sendOtpBtn">Send otp to transfer 10 BLC <span class="donorBloodGroup"><img src="css/img/ic_call_black_48px (2).png" /></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="requestCard card darken-1">
+                    <div class="card-content">
+                        <p class="time">4:00 pm, 09/11/2017</p>
+                        <span class="card-title redText">Need A+ Blood, 6 units <span class="distance">6 kms</span></span>
+                        <div class="addressDiv">
+                            <img class="addressImg" src="css/img/ic_location_on_black_48px (1) copy 2.png" />
+                            <p class="address">Manipal Hospital Old Airport Road HAL 1st stage Bangalore 560007</p>
+                        </div>
+                        <div class="descriptionDiv">
+                            <img src="css/img/ic_face_black_48px copy 2.png" />
+                            <p class="description">My mother is undergoing her heart surgery. Please donate A+ blood.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="smsModal" class="modal">
+                <div class="modal-content modalHeaderDiv">
+                    <h4 class="modalHeader smsModalHeader">Your blood is a gift of life</h4>
+                    <h4 class="modalHeader smsModalHeader">You can donate blood once every 3 months</h4>
+                </div>
+                <div class="modal-content">
+                    <div class="card-content">
+                        <p class="card-title modalTitle">SMS with OTP sent to Senthuram Iyer </p>
+                        <div class="BLCDiv">
+                            <p class="smsText">You will be notified when Senthuram uses it to get 10 BLC from you</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="modal-action modal-close waves-effect waves-red btn-flat"><span class="callImg"><img src="css/img/ic_done_black_64px.png" /></span>GOT IT</a>
+                </div>
+            </div>
+        </div>
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="js/vendor/jquery-3.2.1.min.js"></script>
+        <!-- JS file for alert box -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+        <!-- Compiled and minified Materialize JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/web3.min.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.modal').modal();
+
+                $('.sendOtpBtn').on('click', function(){
+                    $('#smsModal').modal('open');
+                });
+
+                $('.backBtn').on('click', function(){
+                    location.href = 'home.html';
+                });
+
+                $('.logoutBtn').on('click', function(){
+                    location.href = 'index.html';
+                });
+            });
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>

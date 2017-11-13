@@ -1,0 +1,679 @@
+@font-face {
+    font-family: LetterGothic;
+    src: url("fonts/LetterGothic.otf") format("opentype");
+}
+html, body, .grid, .content, .mainDiv{	
+	height: 100% !important;
+}
+html{
+	background-color: #eee;
+}
+.grid{
+	display: grid;
+
+	grid-template-columns:1fr 2fr 1fr;
+	grid-auto-rows: min-content;
+	grid-row-gap: 35px;
+
+	grid-template-areas:
+		"logoDiv logoDiv logoDiv"
+		". loginDiv ."
+		"staticContent staticContent staticContent";	
+}
+.logoDiv{
+	grid-area: logoDiv;
+	text-align: center;
+	margin-top: 10px;
+}
+.loginDiv{
+	grid-area: loginDiv;
+	text-align: center;
+	margin-top: 20px;
+}
+.heading{
+	color: #999;
+	margin-top: 30px;
+	line-height: 130% !important;
+	font-size: 20px !important;
+}
+.btn{
+	border-radius: 20px !important;
+	background-color: #ef3c40 !important;
+	border: 2px solid #fff !important;
+}
+.staticContent{
+	grid-area: staticContent;
+	text-align: center;
+	margin-left: 20px;
+}
+.staticHeading,{
+	color: #ef3c40;
+}
+.staticText{
+	text-align: left;
+}
+.registerText{
+	margin-bottom: 5px !important;
+	margin-top: 25px !important;
+}
+
+/*****************/
+/**register.html**/
+/*****************/
+.registerGrid{
+	display: grid;
+	margin: 20px 0 0 20px;
+	grid-row-gap: 30px;
+
+	grid-template-columns: 1fr 10fr 1fr;
+
+	grid-template-areas:
+	"header header header"
+	". registerDiv .";
+}
+.header{
+	grid-area: header;
+}
+.registerDiv{
+	grid-area: registerDiv;
+}
+.verifyBtn, .startBtn, .donateBtn, .callBtn{
+	color: #ef3c40 !important;
+}
+.verifyForm, .bloodGroupForm, .finalDiv{
+	display: none;
+}
+.bloodGroupBtn{
+	background-color: #fff !important;
+	height: 65px !important;
+	width: 65px !important;
+}
+.bloodGroupText, .bloodGroupTextReg{
+	background-color: #fff !important;
+	color: #333 !important;
+	font-style: normal;
+	font-size: 20px !important;
+	line-height: 65px !important;
+}
+.material-icons.bloodGroupTextReg{
+	font-size: 24px !important;
+}
+.bloodGroupDiv{
+	margin-bottom: 20px;
+}
+.userDiv{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.redText{
+	color: #ef3c40;
+	font-size: 18px;
+	margin-bottom: 5px !important;
+}
+.startText{
+	margin-bottom: 5px !important;
+	margin-top: 5px !important;
+}
+.balance{
+	font-size: 20px;
+	margin-top: 5px !important; 
+	margin-bottom: 20px !important;
+	font-weight: bold;
+}
+.startBtn{
+	font-size: 16px !important;
+}
+.imgSpan{
+	margin-left: 10px;
+}
+
+/************************/
+/**header for home.html**/
+/************************/
+.homeGrid{
+	display: grid;
+
+	grid-template-columns: 1fr;
+
+	grid-template-areas:
+	 "header"
+	 "contentDiv";
+}
+.header{
+	grid-area: header;
+}
+.contentDiv{
+	grid-area: contentDiv;
+	margin-top: 70px;
+}
+nav{
+	background-color: #fff !important;
+	color: #ef3c40 !important;
+	font-weight: bold;
+}
+.tab a{
+	color: #ef3c40 !important;
+	font-size: 16px !important;
+}
+.nav-center ul{
+	text-align: center !important;
+}
+.nav-center ul li{
+	float: none !important;
+}
+.tabs.tabs-transparent .indicator{
+	background-color: #ef3c40 !important;
+}
+.nav-wrapper{
+	padding: 10px 0 0 10px !important;
+}
+.createBtn{
+	background-color: #ef3c40 !important;
+}
+.material-icons{
+	font-style: normal !important;
+	font-size: 34px !important;
+}
+.dropdown-content{
+	min-width: 350px !important;
+	left: 750px !important;
+	padding: 10px !important;
+	border-radius: 10px;
+}
+.btnDiv{
+	display: flex;
+}
+.logoutText{
+	font-size: 24px;
+	color: #333;
+	margin: 0 !important;
+	padding-left: 30px !important;
+}
+.logoutSpan{
+	padding: 0 !important;
+	display: inline !important;
+	margin-right: 10px;
+}
+.logoutBtn{
+	color: #ef3c40 !important;
+	font-size: 16px !important;
+	text-transform: uppercase !important;
+}
+.dropDownCancel{
+	font-size: 16px !important;
+	text-transform: uppercase !important;
+}
+.dropdown-content li{
+	line-height: 36px !important;
+	min-height: 0 !important;
+	width: auto !important;
+}
+.fa.fa-user{
+	color: #333 !important;
+	font-size: 22px !important;
+}
+.bloodRequestBtn, .blcRequestBtn{
+	text-transform: uppercase !important;
+	font-size: 14px !important;
+}
+/************************/
+/*******request tab******/
+/************************/
+.card-title{
+	font-weight: bold !important;
+	font-size: 20px !important;
+	margin-bottom: 0 !important;
+}
+.addressDiv, .descriptionDiv, .rbcDiv{
+	display: -webkit-box !important;
+	margin-top: 10px;
+}
+.address{
+	margin-left: 10px !important;
+	width: 50% !important;
+}
+.description{
+	margin-left: 10px !important;
+}
+.addressImg{
+	margin-right: 5px;
+}
+.distance, .rbc, .modalTime{
+	color: #333;
+	float: right;
+}
+.distance{
+	font-size: 16px;
+}
+.modalTime{
+	font-weight: normal;
+	font-size: 14px;
+	color: #999;
+}
+.rbc{
+	color: #ef3c40;
+	margin-top: -5px;
+}
+.card-action{
+	display: -webkit-box !important;
+}
+.time{
+	margin-top: 6px !important;
+}
+.donateBtn{
+	margin-right: 0 !important;
+	margin-left: 34px;
+	font-weight: bold !important;
+	font-size: 16px !important; 
+}
+.modal{
+	width: 50% !important;
+	height: 58% !important;
+	border-radius: 10px !important;
+}
+.modal-content{
+	padding: 10px 24px !important;
+}
+.modalTitle{
+	margin-top: 0 !important;
+	font-size: 22px !important;
+}
+.modalTitle2{
+	font-size: 16px !important;
+	margin-top: 0 !important;
+}
+.modalAddress, .modalDescription, .modalRbc{
+	margin-top: 0 !important;
+}
+.modalAddress{
+	width: 40% !important;
+}
+.modalHeaderDiv{
+	background-color: #ef3c40;
+	padding: 20px !important;
+}
+.modalHeader{
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 0;
+}
+.modal-footer{
+	text-align: left !important; 
+}
+.callImg{
+	margin-right: 5px;
+}
+.cancelBtn{
+	color: #4E6A78 !important;
+}
+.cancelBtn, .callBtn{
+	font-weight: bold;
+}
+.modalNumber{
+	margin: 0 !important;
+	padding-left: 50px;
+	font-weight: bold;
+	font-size: 16px !important;
+}
+.blcStatic{
+	margin: 0 !important;
+	font-weight: bold;
+	color: #4E6A78;
+}
+/************************/
+/*******history tab******/
+/************************/
+.historyTitle, .donorBloodGroup{
+	color: #ef3c40;
+}
+.editBtn{
+	margin-right: 0 !important;
+	padding-left: 25px !important;
+	font-size: 20px !important;
+}
+.donorsBtn{
+	background-color: #fff !important;
+	border-color: #ef3c40 !important;
+	color: #ef3c40 !important;
+}
+.closeBtn{
+	color: #999 !important;
+	font-weight: bold;
+	padding: 0 1rem !important;
+}
+.historyCardActionDiv{
+	padding: 16px 22px !important;
+}
+.closeReasonDiv{
+	background-color: #eee;
+	border-bottom: 1px solid #999;
+}
+.closeReason{
+	font-size: 18px !important;
+	font-weight: bold;
+}
+/*******************************/
+/**********donor.html***********/
+/*******************************/
+.donorGrid{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: 
+	"donorHeader"
+	"donorContentDiv";
+}
+.donorHeader{
+	grid-area: donorHeader;
+}
+.donorContentDiv{
+	grid-area: donorContentDiv;
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"donorCards"
+	"requestCard";
+}
+.donorCards{
+	grid-area: donorCards;
+}
+.requestCard{
+	grid-area: requestCard;
+}
+.backBtn{
+	color: #4E6A78 !important;
+}
+.donorNavbarBtn, .backBtn{
+	font-size: 16px !important;
+}
+.sendOtpBtn{
+	margin-right: 0 !important;
+	font-weight: bold !important;
+	font-size: 16px !important;
+	padding-left: 0 !important;
+	color: #ef3c40 !important; 
+}
+.donorText{
+	font-size: 18px !important;
+}
+.donorBloodGroup{
+	margin-left: 20px;
+}
+.requestCard{
+	height: fit-content;
+}
+#smsModal{
+	width: 40% !important;
+	height: 42% !important;
+}
+.smsText{
+	font-size: 16px;
+}
+.smsModalHeader{
+	margin-top: 5px !important;
+}
+/************************/
+/***createRequest.html***/
+/************************/
+.requestText{
+	color: #333;
+	font-size: 22px;
+}
+.requestGrid{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"requestHeader"
+	"requestContent";
+}
+.requestHeader{
+	grid-area: requestHeader;
+}
+.requestContent{
+	grid-area: requestContent;
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"bgDiv"
+	"textDiv"
+	"messageDiv";
+}
+.bgDiv{
+	grid-area: bgDiv;
+}
+.textDiv{
+	grid-area: textDiv;
+	margin-top: 15px;
+}
+.messageDiv{
+	grid-area: messageDiv;
+}
+.requestHeaderText{
+	font-size: 16px;
+	font-weight: bold !important;
+}
+.rbcText{
+	float: right;
+	font-size: 14px;
+	margin-right: 40px;
+}
+.dropDownBtn{
+	background-color: #fff !important;
+	color: #333 !important;
+}
+.selectUnits{
+	display: block !important;
+}
+.selectSpan{
+	float: right;
+	margin-right: 40px;
+	margin-top: -8px !important;
+}
+.unitsDiv{
+	margin-top: 30px;
+}
+.chip .close, .chips .input{
+	display: none !important;
+}
+.chips{
+	border: none !important;
+}
+.chip{
+	background-color: #fff !important;
+	height: 60px !important;
+	width: 60px !important;
+	border-radius: 30px !important;
+	padding: 0 18px !important;
+	line-height: 60px !important;
+	font-weight: bold !important;
+	cursor: pointer;
+	font-size: 16px !important;
+	text-align: center !important;
+}
+.chips .chip.selected{
+	background-color: #ef3c40 !important;
+	color: #fff !important;
+}
+.postBtn{
+	color: #ef3c40 !important;
+	font-size: 20px !important;
+}
+.requestText{
+	padding: 20px 0;
+}
+/*******************************/
+/*******editProfile.html********/
+/*******************************/
+.editGrid{
+	display: grid;
+	grid-template-columns: 1fr;
+
+	grid-template-areas:
+		"editHeader"
+		"editContent";
+}
+.editHeader{
+	grid-area: editHeader;
+}
+.editContent{
+	grid-area: editContent;
+	margin-top: 60px;
+}
+.editSaveBtn{
+	color: #ef3c40 !important;
+}
+.cancelEditBtn, .editSaveBtn{
+	margin-top: 20px;
+	font-size: 20px !important;
+}
+.resendBtn{
+	color: #ef3c40 !important;
+}
+.doneBtn, .changeBtn, .resendBtn{
+	font-weight: bold !important;
+}
+#otpModal{
+	width: 40% !important;
+	height: 30% !important;
+}
+/*******************************/
+/*******media queries***********/
+/*******************************/
+@media screen and (min-width: 736px){
+	.grid{
+		display: grid;
+
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-auto-rows: min-content;
+		grid-row-gap: 35px;
+
+		grid-template-areas:
+			". logoDiv ."
+			". loginDiv ."
+			". staticContent .";	
+	}
+	.registerGrid{
+		display: grid;
+		margin: 20px 0 0 20px;
+		grid-row-gap: 30px;
+
+		grid-template-columns: 1fr 1fr 1fr;
+
+		grid-template-areas:
+		"header . ."
+		". registerDiv .";
+	}
+	.homeGrid{
+		display: grid;
+
+		grid-template-columns: 1fr 1fr 1fr;
+
+		grid-template-areas:
+		 "header header header"
+		 ". contentDiv .";
+	}
+	.donorGrid{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"donorHeader"
+		"donorContentDiv";
+	}
+	.donorContentDiv{
+		grid-area: donorContentDiv;
+		display: grid;
+		grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+		grid-template-areas:
+		". donorCards . requestCard .";
+	}
+	.bloodGroupBtn{
+		margin-right: 20px;
+	}
+	.requestGrid{
+		display: grid;
+		grid-template-columns: 1fr 4fr 1fr;
+		grid-template-areas:
+		"requestHeader requestHeader requestHeader"
+		". requestContent .";
+	}
+	.requestContent{
+		grid-area: requestContent;
+		margin-top: 80px;
+		display: grid;
+		grid-template-columns: 1fr 4fr 4fr 1fr;
+		grid-template-areas:
+		". bgDiv textDiv ."
+		". messageDiv messageDiv .";
+	}
+	.editGrid{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+
+		grid-template-areas:
+			"editHeader editHeader editHeader"
+			". editContent .";
+	}
+	.editHeader{
+		grid-area: editHeader;
+	}
+	.editContent{
+		grid-area: editContent;
+	}
+
+}
+@media screen and (max-width: 736px){
+	.modal, #otpModal, #smsModal{
+		width: 95% !important;
+		height: 85% !important;
+		border-radius: 10px !important;
+	}
+	#smsModal{
+		height: 52% !important;
+	}
+	.callBtn, .cancelBtn{
+		padding: 0 1rem !important;
+	}
+	.modalHeader{
+		font-size: 18px !important;
+	}
+	.requestContent{
+		margin: 80px 15px 15px 15px;
+	}
+	.chips{
+		padding: 0 30px;
+	}
+	.editContent{
+		padding: 0 20px;
+	}
+	#otpModal{
+		height: 40% !important;
+	}
+	.editBtn{
+		margin-top: 10px;
+		font-size: 16px !important;
+	}
+	nav .brand-logo{
+		left: 25% !important;
+	}
+	.nav-center ul{
+		text-align: left !important; 
+	}
+	.nav-center .donorsNav{
+		display: -webkit-inline-box;
+		margin-top: 10px;
+	}
+	.requestText{
+		padding: 20px 10px !important;
+	}
+	.dropdown-content{
+		min-width: 280px !important;
+		left: 13px !important;
+	}
+	.fa.fa-user{
+		margin-top: 18px;
+	}
+	.btn-floating.halfway-fab{
+		right: 5px !important;
+	}
+}
