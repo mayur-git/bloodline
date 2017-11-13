@@ -35,6 +35,7 @@ contract BloodlineBLCToken is StandardToken, BurnableToken, Ownable {
     address public adminAddr;               // the address of a crowdsale currently selling this token
     bool    public transferEnabled = false; // indicates if transferring tokens is enabled or not
 
+    // Mapping of user account address to specific request id and it's status
     mapping (address => mapping (bytes32 => bool)) bloodRequests;
 
     // Modifiers
@@ -181,6 +182,10 @@ contract BloodlineBLCToken is StandardToken, BurnableToken, Ownable {
         }
     }
 
+    /**
+     * Check if requester has sufficient BLC balance
+     * Create request and return id of new request
+     */
     function createBloodRequest() public returns (bytes32){
         if(balances[msg.sender] >= DONATION_PRICE) {
             bytes32 id = keccak256(msg.sender, now);
@@ -191,14 +196,17 @@ contract BloodlineBLCToken is StandardToken, BurnableToken, Ownable {
         }
     }
 
+    /**
+     * Check if request is still open
+     * Close request
+     *
+     * @param _id    The id of the request to be closed
+     */
     function closeBloodRequest(bytes32 _id) public returns (bool) {
         if(!bloodRequests[msg.sender][_id]) {
             bloodRequests[msg.sender][_id] = false;
             return true;
         }
     }
-
-    /*function applyForDonation(bytes32 _id) public returns (bool) {
-        if(!bloodRequests[msg.sender][_id]) {*/
 
 }
