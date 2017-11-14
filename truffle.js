@@ -8,7 +8,8 @@ module.exports = {
     ropsten: {
       host: "localhost",
       port: 8545,
-      network_id: "3" // Match any network id
+      network_id: "3",
+      gas: 300000
     },
     kovan: {
       host: 'localhost',
