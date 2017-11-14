@@ -17,9 +17,9 @@ Crowdsale
 -------------
 To participate in the Bloodline Crowdsale using test ETH:
  1. Connect to the **Ropsten** test network in your [Metamask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en).
- 2. Send any amount of ETH(say x) greater than 1 wei to the Crowdsale contract address - **0xc5f9069a3c3f5255ed04aa8cee3baa3572cfaa6c**
+ 2. Send any amount of ETH(say x) greater than 1 wei to the Crowdsale contract address - **0xb6d7a8a3113ef0c177f49a5982906eb82ae03b85**
  3. Receive 10000*x BLC or Bloodline Coins in return.
- 4. Check your BLC balance in Metamask by adding the token with the token contract address - **0x05262802eb169d2d45d451274d2b7418c4f2942b**, symbol - **BLC** and decimals - **18**.
+ 4. Check your BLC balance in Metamask by adding the token with the token contract address - **0x72b34ed41c5caf657c8f084c68c1e6d6d136bc4e**, symbol - **BLC** and decimals - **18**.
  
  Total Supply of BLC = **200000000**
  Crowdsale allocation of BLC = **100000000**
