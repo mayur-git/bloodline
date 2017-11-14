@@ -9,7 +9,7 @@ module.exports = {
       host: "localhost",
       port: 8545,
       network_id: "3",
-      gas: 300000
+      gas: 500000
     },
     kovan: {
       host: 'localhost',
