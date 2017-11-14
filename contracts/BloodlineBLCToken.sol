@@ -164,11 +164,11 @@ contract BloodlineBLCToken is StandardToken, BurnableToken, Ownable {
     /**
      * Transfers BLC_ALLOWANCE to every new user
      */
-    function registerUser() public returns (uint256) {
-        address _from = adminAddr;
-        address _to = msg.sender;
-        if(super.transferFrom(_from, _to, BLC_ALLOWANCE)) {
-            return balances[msg.sender];
+    function registerUser(address _userAddr) public returns (uint256) {
+        address from = adminAddr;
+        address to = _userAddr;
+        if(super.transferFrom(from, to, BLC_ALLOWANCE)) {
+            return balances[to];
         }
     }
 
@@ -176,8 +176,8 @@ contract BloodlineBLCToken is StandardToken, BurnableToken, Ownable {
      * Transfers DONATION_PRICE to Donor
      */
     function confirmDonation(address _to) public returns (uint256) {
-        address _from = msg.sender;
-        if(super.transferFrom(_from, _to, DONATION_PRICE)) {
+        address from = msg.sender;
+        if(super.transferFrom(from, _to, DONATION_PRICE)) {
             return balances[msg.sender];
         }
     }
