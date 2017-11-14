@@ -26,7 +26,7 @@ module.exports = function(deployer, network, accounts) {
     deployer.deploy(StandardToken);
     deployer.link(StandardToken, BasicToken);
 
-    deployer.deploy(BloodlineBLCToken);
+    deployer.deploy(BloodlineBLCToken, {gas: 500000});
     deployer.link(BloodlineBLCToken, StandardToken);
     deployer.link(BloodlineBLCToken, Ownable);
     deployer.link(BloodlineBLCToken, BurnableToken);
