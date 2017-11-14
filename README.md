@@ -53,9 +53,13 @@ View Balance
 To-Do:
 -------------
 1. Create pre-filled wallets on signup to cover transaction fees.
-2. Request for BLC donations for community.
+2. Allow users to request for BLC donations from community.
 3. White Paper
-4. Improve UI/UX.
+4. Move to Mainnet
+5. Provide BLC redemtion mechanisms via
+    a. Integration with VAS(phone/dth recharge, coupons...) providers.
+    b. Listing token on exchange.
+6. Improve UI/UX.
 
 ---
  
