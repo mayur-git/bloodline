@@ -16,12 +16,13 @@ This lead to the conceptualization and creation of Bloodline based on the Etheri
 Crowdsale
 -------------
 To participate in the Bloodline Crowdsale using test ETH:
- 1. **Connect to the Ropsten test network in your [Metamask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en).**
- 2. **Send any amount of ETH(say x) greater than 1 wei to the Crowdsale contract address - 0xajskdjadhs**
- 3. **Receive 10000*x BLC or Bloodline Coins in return.**
+ 1. Connect to the **Ropsten** test network in your [Metamask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en).
+ 2. Send any amount of ETH(say x) greater than 1 wei to the Crowdsale contract address - **0xc5f9069a3c3f5255ed04aa8cee3baa3572cfaa6c**
+ 3. Receive 10000*x BLC or Bloodline Coins in return.
+ 4. Check your BLC balance in Metamask by adding the token with the token contract address - **0x05262802eb169d2d45d451274d2b7418c4f2942b**, symbol - **BLC** and decimals - **18**.
  
- **Total Supply of BLC = 200000000**
- **Crowdsale Supply of BLC = 100000000**
+ Total Supply of BLC = **200000000**
+ Crowdsale allocation of BLC = **100000000**
 
 ---
 
@@ -52,9 +53,13 @@ View Balance
 To-Do:
 -------------
 1. Create pre-filled wallets on signup to cover transaction fees.
-2. Request for BLC donations for community.
+2. Allow users to request for BLC donations from community.
 3. White Paper
-4. Improve UI/UX.
+4. Move to Mainnet
+5. Provide BLC redemtion mechanisms via
+    a. Integration with VAS(phone/dth recharge, coupons...) providers.
+    b. Listing token on exchange.
+6. Improve UI/UX.
 
 ---
  
